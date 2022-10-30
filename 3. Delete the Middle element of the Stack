@@ -8,12 +8,12 @@ class Solution
         stack <int> st; 
         
          
-        for(int i=0; i<ceil((sizeOfStack+1)/2) + 1; i++) {
+        for(int i=0; i<(sizeOfStack/2) + 1; i++) {
             st.push(s.top());
             s.pop();
         }
         // Popping the middle element
-        //st.pop();
+         st.pop();
         // Restoring the stack
         while(!st.empty()) {
             s.push(st.top());
